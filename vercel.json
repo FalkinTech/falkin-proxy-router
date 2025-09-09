@@ -14,6 +14,11 @@
       "destination": "https://microsite-seven.vercel.app/:path*"
     },
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "falkin.com" }],
+      "destination": "https://able-ways-807681.framer.app/"
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "falkin.com" }],
       "destination": "https://able-ways-807681.framer.app/:path*"
