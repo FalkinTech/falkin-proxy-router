@@ -8,125 +8,34 @@
     }
   ],
   "rewrites": [
-    {
-      "source": "/check/:path*",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/:path*"
-    },
-    {
-      "source": "/_next/static/:path*",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/_next/static/:path*"
-    },
-    {
-      "source": "/_next/image",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/_next/image"
-    },
-    {
-      "source": "/_next/data/:path*",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/_next/data/:path*"
-    },
-    {
-      "source": "/api/:path*",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/api/:path*"
-    },
-    {
-      "source": "/assets/:path*",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/assets/:path*"
-    },
-    {
-      "source": "/favicon.ico",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/favicon.ico"
-    },
-    {
-      "source": "/robots.txt",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/robots.txt"
-    },
-    {
-      "source": "/sitemap.xml",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/sitemap.xml"
-    },
-    {
-      "source": "/sitemap-:slug(.+).xml",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/sitemap-:slug.xml"
-    },
-    {
-      "source": "/sitemap:rest(.+).xml.gz",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/sitemap:rest.xml.gz"
-    },
-    {
-      "source": "/manifest.json",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/manifest.json"
-    },
-    {
-      "source": "/site.webmanifest",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/site.webmanifest"
-    },
-    {
-      "source": "/opengraph-image",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/opengraph-image"
-    },
-    {
-      "source": "/opengraph-image.png",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/opengraph-image.png"
-    },
-    {
-      "source": "/twitter-image",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/twitter-image"
-    },
-    {
-      "source": "/twitter-image.png",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/twitter-image.png"
-    },
-    {
-      "source": "/icon.png",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/icon.png"
-    },
-    {
-      "source": "/icon-:size(\\d+)x:dup(\\d+).png",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/icon-:sizex:dup.png"
-    },
-    {
-      "source": "/apple-touch-icon.png",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://microsite-seven.vercel.app/apple-touch-icon.png"
-    },
-    {
-      "source": "/",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://able-ways-807681.framer.app/"
-    },
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "falkin.com" }],
-      "destination": "https://able-ways-807681.framer.app/:path*"
-    }
+    { "source": "/check/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/:path*" },
+    { "source": "/_next/static/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/static/:path*" },
+    { "source": "/_next/image",           "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/image" },
+    { "source": "/_next/data/:path*",     "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/data/:path*" },
+    { "source": "/api/:path*",            "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/api/:path*" },
+    { "source": "/assets/:path*",         "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/assets/:path*" },
+    { "source": "/favicon.ico",           "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/favicon.ico" },
+    { "source": "/robots.txt",            "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/robots.txt" },
+    { "source": "/sitemap.xml",           "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/sitemap.xml" },
+    { "source": "/manifest.json",         "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/manifest.json" },
+    { "source": "/site.webmanifest",      "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/site.webmanifest" },
+    { "source": "/apple-touch-icon.png",  "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/apple-touch-icon.png" },
+    { "source": "/icon.png",              "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/icon.png" },
+    { "source": "/opengraph-image",       "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/opengraph-image" },
+    { "source": "/opengraph-image.png",   "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/opengraph-image.png" },
+    { "source": "/twitter-image",         "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/twitter-image" },
+    { "source": "/twitter-image.png",     "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/twitter-image.png" },
+    { "source": "/",           "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://able-ways-807681.framer.app/" },
+    { "source": "/:path*",     "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://able-ways-807681.framer.app/:path*" }
   ],
   "headers": [
     {
       "source": "/:path*",
       "headers": [
         { "key": "Strict-Transport-Security", "value": "max-age=31536000" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        { "key": "X-Frame-Options",           "value": "SAMEORIGIN" },
+        { "key": "X-Content-Type-Options",    "value": "nosniff" },
+        { "key": "Referrer-Policy",           "value": "strict-origin-when-cross-origin" }
       ]
     }
   ]
