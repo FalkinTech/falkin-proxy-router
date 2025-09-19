@@ -8,72 +8,6 @@
     }
   ],
   "rewrites": [
-    { "source": "/check/tsb",           "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://tsb.falkin.com/" },
-    { "source": "/check/tsb/:path*",    "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://tsb.falkin.com/:path*" },
-    { "source": "/_next/static/:path*", "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/_next/static/:path*" },
-    { "source": "/_next/image",         "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/_next/image" },
-    { "source": "/_next/data/:path*",   "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/_next/data/:path*" },
-    { "source": "/api/:path*",          "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/api/:path*" },
-    { "source": "/assets/:path*",       "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/assets/:path*" },
-    { "source": "/favicon.ico",         "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/favicon.ico" },
-    { "source": "/robots.txt",          "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/robots.txt" },
-    { "source": "/sitemap.xml",         "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/sitemap.xml" },
-    { "source": "/manifest.json",       "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/manifest.json" },
-    { "source": "/site.webmanifest",    "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/site.webmanifest" },
-    { "source": "/apple-touch-icon.png", "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/apple-touch-icon.png" },
-    { "source": "/icon.png",            "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/icon.png" },
-    { "source": "/opengraph-image",     "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/opengraph-image" },
-    { "source": "/opengraph-image.png", "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/opengraph-image.png" },
-    { "source": "/twitter-image",       "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/twitter-image" },
-    { "source": "/twitter-image.png",   "has": [
-      { "type": "host", "value": "falkin.com" },
-      { "type": "cookie", "key": "brand", "value": "tsb" }
-    ], "destination": "https://tsb.falkin.com/twitter-image.png" },
     { "source": "/check/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/:path*" },
     { "source": "/_next/static/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/static/:path*" },
     { "source": "/_next/image",           "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/image" },
@@ -95,12 +29,6 @@
     { "source": "/:path*",     "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://able-ways-807681.framer.app/:path*" }
   ],
   "headers": [
-    {
-      "source": "/check/tsb/:path*",
-      "headers": [
-        { "key": "Set-Cookie", "value": "brand=tsb; Path=/; Max-Age=600; SameSite=Lax; Secure" }
-      ]
-    },
     {
       "source": "/:path*",
       "headers": [
