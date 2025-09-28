@@ -7,9 +7,7 @@
       "permanent": true
     }
   ],
-  "functions": {
-    "api/edge-proxy.ts": { "runtime": "edge" }
-  },
+  
   "rewrites": [
     { "source": "/check",              "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
     { "source": "/check/:path*",       "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
