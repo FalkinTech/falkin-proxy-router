@@ -7,7 +7,14 @@
       "permanent": true
     }
   ],
+  "functions": {
+    "api/edge-proxy.ts": { "runtime": "edge" }
+  },
   "rewrites": [
+    { "source": "/check",              "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
+    { "source": "/check/:path*",       "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
+    { "source": "/demo/:brand",        "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
+    { "source": "/demo/:brand/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
     { "source": "/check/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/:path*" },
     { "source": "/_next/static/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/static/:path*" },
     { "source": "/_next/image",           "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/image" },
