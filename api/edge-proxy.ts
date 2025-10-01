@@ -26,8 +26,12 @@ export default async function handler(req: Request) {
 
   const headers = new Headers(req.headers);
   headers.set('x-tenant', tenant);
+  headers.set('x-forwarded-host', url.host);
+  headers.set('x-forwarded-proto', url.protocol.replace(':', ''));
   headers.delete('connection');
   headers.delete('transfer-encoding');
+  headers.delete('host');
+  headers.delete('accept-encoding');
 
   const method = req.method || 'GET';
   const init: RequestInit = {
