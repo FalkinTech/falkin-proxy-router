@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "check.falkin.com" }],
+      "has": [{ "type": "header", "key": "host", "value": "^check\\.falkin\\.com$" }],
       "destination": "https://falkin.com/check/:path*",
       "permanent": true
     },
