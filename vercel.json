@@ -2,6 +2,12 @@
   "redirects": [
     {
       "source": "/:path*",
+      "has": [{ "type": "host", "value": "check.falkin.com" }],
+      "destination": "https://falkin.com/check/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
       "has": [{ "type": "host", "value": "www.falkin.com" }],
       "destination": "https://falkin.com/:path*",
       "permanent": true
@@ -13,7 +19,6 @@
     { "source": "/check/:path*",       "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
     { "source": "/demo/:brand",        "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
     { "source": "/demo/:brand/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "/api/edge-proxy" },
-    { "source": "/check/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/:path*" },
     { "source": "/_next/static/:path*", "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/static/:path*" },
     { "source": "/_next/image",           "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/image" },
     { "source": "/_next/data/:path*",     "has": [{ "type": "host", "value": "falkin.com" }], "destination": "https://microsite-seven.vercel.app/_next/data/:path*" },
