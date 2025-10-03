@@ -13,6 +13,102 @@
       "permanent": true
     },
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "aviva.falkin.com" }],
+      "destination": "https://falkin.com/demo/aviva",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "aviva.falkin.com" }],
+      "destination": "https://falkin.com/demo/aviva/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "td.falkin.com" }],
+      "destination": "https://falkin.com/demo/td",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "td.falkin.com" }],
+      "destination": "https://falkin.com/demo/td/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "natwest.falkin.com" }],
+      "destination": "https://falkin.com/demo/natwest",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "natwest.falkin.com" }],
+      "destination": "https://falkin.com/demo/natwest/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "tsb.falkin.com" }],
+      "destination": "https://falkin.com/demo/tsb",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "tsb.falkin.com" }],
+      "destination": "https://falkin.com/demo/tsb/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "yulife.falkin.com" }],
+      "destination": "https://falkin.com/demo/yulife",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "yulife.falkin.com" }],
+      "destination": "https://falkin.com/demo/yulife/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "absa.falkin.com" }],
+      "destination": "https://falkin.com/demo/absa",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "absa.falkin.com" }],
+      "destination": "https://falkin.com/demo/absa/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "ecb.falkin.com" }],
+      "destination": "https://falkin.com/demo/ecb",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "ecb.falkin.com" }],
+      "destination": "https://falkin.com/demo/ecb/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "huntington.falkin.com" }],
+      "destination": "https://falkin.com/demo/huntington",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "huntington.falkin.com" }],
+      "destination": "https://falkin.com/demo/huntington/:path*",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.falkin.com" }],
       "destination": "https://falkin.com/:path*",
